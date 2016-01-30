@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="objects-app">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta name="robots" content="noindex,nofollow" />
+    
+	<link rel="stylesheet" href="assets/lib/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <script type="text/javascript" src="assets/lib/angular-1.4.js"></script>
+<!--    <script type="text/javascript" src="../www/lib/jquery-2.2.0.js"></script>-->
+<!--    <script type="text/javascript" src="../www/lib/bootstrap-3.3.6-dist/js/bootstrap.js"></script>-->
+    <script type="text/javascript" src="assets/js/index.js"></script>
+	<title>Objects</title>
+</head>
+
+<body>
+
+<div id="main" ng-controller="ObjectsCtrl as objectCtrl">
+
+	<input type="text" ng-model="name">
+	<h2>Welcome {{name}}!</h2>
+	
+	<table class="table">
+		<tr ng-repeat="obj in objectCtrl.objects">
+			<td>{{obj.id}}</td><td>{{obj.type}}</td><td>{{obj.name}}</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

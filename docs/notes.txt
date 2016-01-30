@@ -1,0 +1,11 @@
+
+MongoDB drivers for PHP 7:
+http://pecl.php.net/package/mongodb/1.1.2/windows
+
+Install MongoDB
+https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
+https://docs.mongodb.org/manual/reference/configuration-options/
+
+Angular:
+https://angularjs.org/
+https://scotch.io/tutorials/angularjs-best-practices-directory-structure
